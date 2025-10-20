@@ -2,18 +2,18 @@
 
 A Rust implementation of post-quantum cryptographic algorithms for securing entropy distribution to IoT devices using quantum-resistant encryption.
 
-## 🔐 Overview
+## Overview
 
 This library provides the cryptographic foundation for a Quantum Random Number Generator (QRNG) entropy-as-a-service system. It implements post-quantum cryptography (PQC) algorithms to ensure that entropy distribution remains secure even against future quantum computer attacks.
 
-## 🚀 Features
+## Features
 
 - **Kyber1024 KEM**: NIST-standardized Key Encapsulation Mechanism for post-quantum encryption
 - **liboqs Integration**: Built on the industry-standard Open Quantum Safe library
 - **IoT-Ready**: Designed for secure entropy distribution to resource-constrained devices
 - **Future-Proof**: Quantum-resistant cryptography that remains secure against quantum attacks
 
-## 📋 Architecture
+## Architecture
 
 ```
 ┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
@@ -29,7 +29,7 @@ This library provides the cryptographic foundation for a Quantum Random Number G
                            Hardware QRNG
 ```
 
-## 🛠 Installation
+## Installation
 
 ### Prerequisites
 
@@ -56,7 +56,7 @@ cd PQC-Algo
 cargo build --release
 ```
 
-## 📖 Usage
+## Usage
 
 ### Basic KEM Operations
 
@@ -87,7 +87,7 @@ match generate_keypair() {
 }
 ```
 
-## 🧪 Testing
+## Testing
 
 Run the test suite:
 ```bash
@@ -99,7 +99,7 @@ Run tests with output:
 cargo test -- --nocapture
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -111,21 +111,21 @@ src/
 Cargo.toml          # Dependencies and project configuration
 ```
 
-## 🔬 Algorithms
+## Algorithms
 
 ### Currently Implemented
 
 - **Kyber1024**: NIST-standardized KEM for post-quantum key exchange
   - Key Size: 1568 bytes (public), 3168 bytes (secret)  
   - Security Level: NIST Level 5 (equivalent to AES-256)
-  - Quantum Safe: Yes ✅
+  - Quantum Safe: Yes
 
 ### Planned
 
 - **Dilithium**: Digital signatures for device authentication
 - **Additional KEMs**: Support for other NIST-approved algorithms
 
-## 🌐 Use Cases
+## Use Cases
 
 ### Entropy-as-a-Service
 - **QRNG Server**: Distributes hardware-generated entropy to IoT devices
@@ -137,13 +137,13 @@ Cargo.toml          # Dependencies and project configuration
 - **Sensor Networks**: Quantum-safe key distribution
 - **Critical Infrastructure**: Future-proof cryptographic protection
 
-## 🔧 Dependencies
+## Dependencies
 
 - **oqs**: Rust bindings for liboqs (Open Quantum Safe)
 - **liboqs**: Industry-standard post-quantum cryptography library
 - **Standard Rust libraries**: For error handling and memory management
 
-## 🚧 Roadmap
+## Roadmap
 
 - [ ] **Dilithium Signatures**: Complete authentication system
 - [ ] **REST API**: HTTP interface for entropy requests  
@@ -151,7 +151,7 @@ Cargo.toml          # Dependencies and project configuration
 - [ ] **Multiple Algorithm Support**: Additional NIST-approved PQC algorithms
 - [ ] **Client Libraries**: SDKs for various IoT platforms
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -159,11 +159,11 @@ Cargo.toml          # Dependencies and project configuration
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🛡️ Security
+## Security
 
 This implementation uses NIST-approved post-quantum cryptographic algorithms. However:
 
@@ -171,7 +171,7 @@ This implementation uses NIST-approved post-quantum cryptographic algorithms. Ho
 - **Key Management**: Implement proper key storage and rotation in production
 - **Side-Channel Protection**: Consider additional protections for embedded deployments
 
-## 📞 Contact
+## Contact
 
 - **Author**: Ricky Gole
 - **Project**: [PQC-Algo](https://github.com/Rickygole/PQC-Algo)
@@ -179,4 +179,4 @@ This implementation uses NIST-approved post-quantum cryptographic algorithms. Ho
 
 ---
 
-*Built with 🦀 Rust for quantum-safe IoT security*
+*Built with Rust for quantum-safe IoT security*
