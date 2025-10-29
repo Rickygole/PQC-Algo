@@ -1,6 +1,8 @@
 pub mod error;
 pub mod kem;
 pub mod sign;
+pub mod binary_loader;
+pub mod qrng;
 
 pub use error::{PqcError, Result};
 pub use kem::KyberKeyPair;

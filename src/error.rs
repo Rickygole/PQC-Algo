@@ -19,6 +19,12 @@ pub enum PqcError {
     
     #[error("Invalid input: {0}")]
     InvalidInput(String),
+    
+    #[error("I/O error: {0}")]
+    Io(String),
+    
+    #[error("Invalid key: {0}")]
+    InvalidKey(String),
 }
 
 pub type Result<T> = std::result::Result<T, PqcError>;

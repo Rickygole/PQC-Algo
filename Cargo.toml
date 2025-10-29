@@ -3,6 +3,26 @@ name = "pqc-algo"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]]
+name = "pqc-demo"
+path = "src/main.rs"
+
+[[bin]]
+name = "test-keys"
+path = "src/test_keys.rs"
+
+[[bin]]
+name = "kyber-test"
+path = "src/kyber_test.rs"
+
+[[bin]]
+name = "binary-analyzer"
+path = "src/binary_analyzer.rs"
+
+[[bin]]
+name = "qrng-demo"
+path = "src/qrng_demo.rs"
+
 [dependencies]
 oqs = "0.10"
 rand = "0.8"
@@ -11,6 +31,8 @@ aes-gcm = "0.10"
 thiserror = "1.0"
 serde = { version = "1.0", features = ["derive"] }
 hex = "0.4"
+sha2 = "0.10"
+rand_chacha = "0.3"
 
 [dev-dependencies]
 hex = "0.4"
