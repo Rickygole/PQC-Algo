@@ -4,7 +4,7 @@ Post-quantum cryptography library for securing entropy distribution in IoT syste
 
 ## Overview
 
-This Rust library implements NIST-approved post-quantum cryptographic algorithms for the QEaaS project. It provides Kyber-1024 for key encapsulation, Dilithium-3 for digital signatures, and AES-256-GCM for hybrid encryption. Basically, it makes sure your random numbers stay random even when quantum computers show up to the party.
+This Rust library implements NIST-approved post-quantum cryptographic algorithms for the QEaaS project. It provides Kyber-1024 for key encapsulation, Dilithium-3 for digital signatures, and AES-256-GCM for hybrid encryption. The library ensures quantum-resistant security for entropy distribution in IoT systems.
 
 ## Features
 
@@ -206,6 +206,4 @@ pqc-algo/
 │   └── api.rs         # High-level convenience functions
 ├── Cargo.toml
 └── README.md
-
-bye bye hahah
 ```
